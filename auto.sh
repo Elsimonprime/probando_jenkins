@@ -4,7 +4,7 @@ echo "WORKDIR /app" >> Dockerfile
 echo "COPY app.py /app" >> Dockerfile
 echo "COPY index.html /app/templates/" >> Dockerfile
 echo "RUN pip install flask" >> Dockerfile
-echo "EXPOSE 8080" >> Dockerfile
+echo "EXPOSE 8000" >> Dockerfile
 echo 'CMD ["python", "app.py"]' >> Dockerfile
 
 docker build -t web1 .
