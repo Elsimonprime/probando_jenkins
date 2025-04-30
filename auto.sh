@@ -8,6 +8,6 @@ echo "EXPOSE 8080" >> Dockerfile
 echo 'CMD ["python", "app.py"]' >> Dockerfile
 
 docker build -t web1 .
-docker run -d -p 8080:8080 --name web1 web1
+docker run -d -p 8000:8000 --name web1 web1
 docker ps 
 
